@@ -1,4 +1,5 @@
 import json
+import cv2
 
 with open("../benchmark_velocity_supp/annotation.json", 'r') as f:
     annotations = json.load(f)
@@ -21,3 +22,6 @@ with open("../benchmark_velocity_supp/info.dat", 'a') as f:
             line = " ".join([line, x, y, width, height])
 
         f.write(line + "\n")
+
+image = cv2.imread("../benchmark_velocity_supp/supp_img/0001.jpg")
+print(image.shape)
