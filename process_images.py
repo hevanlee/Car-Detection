@@ -69,4 +69,4 @@ with open("../GTI Car Detection Database/negatives.txt", 'w') as f:
         path = "../GTI Car Detection Database/non-vehicles/" + folder
 
         for img in os.listdir(path):
-            f.write(path + "/" + img + "\n")
+            f.write("../../../../../UNSW/COMP9517/Project/Individual/GTI Car Detection Database/non-vehicles/" + folder + "/" + img + "\n")
